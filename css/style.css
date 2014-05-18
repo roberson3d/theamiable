@@ -1,0 +1,228 @@
+/* Grid ================================= */
+
+body {background: #ffffff;}
+
+.span {
+    float: left;
+    display: in-line block;
+    width: 100%;
+    padding: 2%;
+   
+  }
+
+div {	float: left;
+		overflow: inherit;
+		
+		}
+		
+.container {margin-left: 5%;
+			margin-right: 5%;
+ 			width: 90%;
+ 			 background: #ffffff;
+ 			 opacity:1;
+ 			 overflow: inherit;
+ 			 
+ 			}
+ 		
+.row {width: 100%; 
+	}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+
+/* Mobile First ================================= */
+@media only screen and (max-width: 480px)
+{
+#fix {width:100%;}
+.finseth {width:100%;}
+#finseth {width:100%; }
+}
+
+/* Tablet ============= 481px to 800px ==================== 
+inherits from mobile layout, so do overrides here */
+
+@media only screen and (min-width: 481px) and (max-width: 800px)
+{
+.span.three {width: 50%;}
+
+ #finseth {width:100%;
+		padding-left:25%;
+		padding-right:25%;}
+.wrap {width: 100%;}
+#fix {width:50%;}
+}
+
+
+
+/* Desktop ============= 800px + ==================== */
+
+@media only screen and (min-width: 801px)
+{
+body {font-size: 130%;
+line-height: 100%;}
+
+.span.fifteen {width: 100%;}
+.span.half {width: 50%;}
+.span.five {width: 33.3%;}
+.span.three {width: 20%;}
+.span.one  {width: 6.66%;} 
+
+.wrap {width: 40%;}
+.finseth {width: 20%;}
+#fix {width: 50%;}
+#finseth {width: 98%;}
+
+}
+
+/* Gutters ================================= */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+/* Typography ================================= */
+
+body
+{color: #333;
+font-family: 'Museo-300', 'Open Sans', sans-serif;
+font-weight: normal;
+font-style: normal;
+font-size: 11pt;
+line-height: 18pt;
+/* background: url('') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+    margin: 0;
+  padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {display:inline;}
+
+h1 {font-size: 4em; line-height: 1.3em; margin-top: 40px; margin-bottom: 40px;}
+h2 {font-size: 3.5em; line-height: 1.2em; margin-top: 30px; margin-bottom: 30px;}
+h3 {font-size: 3em; line-height: 1.1em; margin-top: 0px; margin-bottom: 0px;}
+h4 {font-size: 2.5em; line-height: 1em; margin-top: 10px; margin-bottom: 10px;}
+h5 {font-size: 2em; line-height: .8em; margin-top: 10px; margin-bottom: 10px;}
+h6 {font-size: 1.5em; line-height: .9em; margin-top: 10px; margin-bottom: 10px;}
+
+
+
+img {width: 100%;}
+
+
+hr {
+display: block;
+-webkit-margin-before: 2em;
+-webkit-margin-after: 2em;
+-webkit-margin-start: auto;
+-webkit-margin-end: auto;
+
+border-width: 1px;
+color: #333;
+}
+
+/* Links ======================================= */ 
+
+a:link {text-decoration: none; color:#632c8a;} 
+a:visited {none; color:#632c8a;}
+a:hover {color: #8856a2;}
+
+
+/* Buttons ======================================= */ 
+
+
+#buttonpeter {color: #333; 
+background-color: #f0db37; 
+border-radius:10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px; 
+padding: 10px 4px 10px 4px;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+#buttonpeter:hover {color: #eee; background-color:#eaaa21;}
+
+#buttonjorge {color: #333; 
+background-color: #2498d4; 
+border-radius:10px; 
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+padding: 10px 4px 10px 4px;
+margin-top:20px;
+margin-bottom:10px;
+}
+#buttonjorge:hover {color: #eee; background-color:#4aa2d9;}
+
+
+#buttonlaskey {color: #333; 
+background-color: #a96bac; 
+border-radius:10px; 
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+padding: 10px 4px 10px 4px;
+margin-top:20px;
+margin-bottom:10px;
+}
+#buttonlaskey:hover {color: #eee; background-color:#632c8a;}
+
+
+#buttonricky {color: #333; 
+background-color: #72c173; 
+border-radius:10px; 
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+padding: 10px 4px 10px 4px;
+margin-top:20px;
+margin-bottom:10px;
+}
+#buttonricky:hover {color: #eee; background-color:#1db14b;}
+
+
+#buttonfinseth {color: #333; 
+background-color: #ed8c28; 
+border-radius:10px; 
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+padding: 10px 4px 10px 4px;
+margin-top:20px;
+margin-bottom:10px;
+}
+#buttonfinseth:hover {color: #eee; background-color:#f16d22;}
+
+
+
+/* Misc ======================================= */ 
+
+#header {background-color: #8856a2; 
+width:100%; 
+
+}
+
+#footer {background-color: #8856a2; 
+color: #eee;
+width:100%; 
+padding: 20px;
+margin-top: 20px;
+text-align:center;
+}
+
